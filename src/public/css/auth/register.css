@@ -1,0 +1,50 @@
+.header-logo {
+  background: url("logo.svg");
+}
+
+.content {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ttl {
+  font-size: 30px;
+  margin: 50px 0 0;
+}
+
+.content-form {
+  margin-top: 30px;
+}
+
+.form-label {
+  width: 50%;
+  margin: 35px auto 0;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.form-input {
+  width: 50%;
+  height: 30px;
+}
+
+.form-button {
+  margin: 50px 0 20px;
+}
+
+.button-submit {
+  width: 50%;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background: #FF5555;
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.form-link {
+  text-decoration: none;
+  color: #0073CC;
+}
