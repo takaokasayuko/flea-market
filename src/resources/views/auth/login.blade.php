@@ -1,20 +1,19 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/auth/register.css') }}">
+<link rel="stylesheet" href="{{ asset('css/auth/login.css') }}">
 @endsection
 
 @section('header')
 <div class="header-logo">
 
 </div>
-
 @endsection
 
 @section('content')
 <div class="content">
-  <h1 class="ttl">会員登録</h1>
-  <form class="form" action="/register" method="post">
+  <h1 class="ttl">ログイン</h1>
+  <form class="form" action="/login" method="post">
     @csrf
     <div class="content__form">
       <div class="form__group">
@@ -36,12 +35,10 @@
         </p>
       </div>
 
-      <button class="button__button-submit">登録する</button>
+      <button class="button__button-submit">ログインする</button>
     </div>
   </form>
-
-  <a class="form__link" href="/login">ログインはこちら</a>
+  <a class="form__link" href="/register">会員登録はこちら</a>
 
 </div>
-
 @endsection
