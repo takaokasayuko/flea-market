@@ -14,22 +14,34 @@
 @section('content')
 <div class="content">
   <h1 class="ttl">会員登録</h1>
-  <div class="content-form">
-    <div class="form-group">
-      <p class="form-label">メールアドレス</p>
-      <input class="form-input" type="text">
-    </div>
-    <div class="form-group">
-      <p class="form-label">パスワード</p>
-      <input class="form-input" type="text">
-    </div>
-    <div class="form-button">
-      <button class="button-submit">登録する</button>
-    </div>
+  <form class="form" action="/register" method="post">
+    @csrf
+    <div class="content__form">
+      <div class="form__group">
+        <label class="form__label" for="email">メールアドレス</label>
+        <input class="form__input" type="email" name="email" id="email" value="{{ old('email') }}">
+        <p class="form__error-message">
+          @error('email')
+          {{ $message }}
+          @enderror
+        </p>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="password">パスワード</label>
+        <input class="form__input" type="password" name="password" id="password">
+        <p class="form__error-message">
+          @error('password')
+          {{ $message }}
+          @enderror
+        </p>
+      </div>
 
-    <a class="form-link" href="">ログインはこちら</a>
+      <button class="button__button-submit">登録する</button>
+    </div>
+  </form>
 
-  </div>
+  <a class="form__link" href="">ログインはこちら</a>
+
 </div>
 
 @endsection
