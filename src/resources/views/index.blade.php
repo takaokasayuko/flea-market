@@ -5,18 +5,49 @@
 @endsection
 
 @section('header')
-<div class="header-nav">
-  <nav class="nav">
-    <ul class="nav__group">
-      <li class="nav__item">
-        <form class="form-logout" action="/logout" method="post">
-          @csrf
-          <button class="header-nav__button">ログアウト</button>
-        </form>
-      </li>
-    </ul>
+<div class="header">
+  <div class="header__logo">
+    <a class="top-page__link" href="/">
+      <img src="/icon/logo.svg" alt="COATCHTECHロゴ">
+    </a>
+  </div>
 
-  </nav>
+  <div class="header__center">
+    <p class="header__center-text">なにをお探しですか？</p>
+  </div>
+
+  <div class="header__nav">
+    <nav class="nav">
+
+      <ul class="nav__group">
+        @guest
+        <li class="nav__item">
+          <a class="login-link" href="/login">ログイン</a>
+        </li>
+        <li class="nav__item">
+          <a class="register-link" href="/register">会員登録</a>
+        </li>
+        @endguest
+
+        @auth
+        <li class="nav__item">
+          <form class="form-logout" action="/logout" method="post">
+            @csrf
+            <button class="header-logout__button">ログアウト</button>
+          </form>
+        </li>
+        <li class="nav__item">
+          <a class="mypage-link" href="/mypage">マイページ</a>
+        </li>
+        @endauth
+
+        <li class="nav__item nav__item-sell">
+          <a class="sell-link" href="/sell">出品</a>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
 </div>
 @endsection
 

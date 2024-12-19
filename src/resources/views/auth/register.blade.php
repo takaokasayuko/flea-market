@@ -6,9 +6,10 @@
 
 @section('header')
 <div class="header-logo">
-
+  <a class="top-page__link" href="/">
+    <img src="/icon/logo.svg" alt="COATCHTECHロゴ">
+  </a>
 </div>
-
 @endsection
 
 @section('content')
