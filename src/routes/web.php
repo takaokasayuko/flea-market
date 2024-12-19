@@ -14,4 +14,6 @@ use App\Http\Controllers\ItemController;
 |
 */
 
+Route::get('/sell', [ItemController::class, 'sell'])->name('sell');
+
 Route::get('/', [ItemController::class, 'index'])->name('index');
