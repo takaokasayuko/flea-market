@@ -1,6 +1,51 @@
-.header-nav__button {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.header__center {
+  background-color: white;
+  height: 28px;
+  width: 30%;
+  border-radius: 3px;
+}
+.header__center-text {
+  margin: 0;
+  padding: 4px 20px;
+}
+
+.header__nav {
+  width: 30%;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.header-logout__button {
   color: white;
   background: black;
   border: none;
   cursor: pointer;
+  font-size: 17px;
+}
+
+.login-link, .register-link,
+.mypage-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__item-sell {
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.sell-link {
+  text-decoration: none;
+  color: black;
 }
