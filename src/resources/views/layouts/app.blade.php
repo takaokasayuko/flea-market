@@ -12,8 +12,15 @@
 </head>
 
 <body>
-  <header class="header">
+  <header>
+    <div class="header">
+      <div class="header__logo">
+        <a class="top-page__link" href="/">
+          <img src="/icon/logo.svg" alt="COATCHTECHロゴ">
+        </a>
+      </div>
       @yield('header')
+    </div>
   </header>
 
   <main>

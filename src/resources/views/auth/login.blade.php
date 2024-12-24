@@ -4,14 +4,6 @@
 <link rel="stylesheet" href="{{ asset('css/auth/login.css') }}">
 @endsection
 
-@section('header')
-<div class="header-logo">
-  <a class="top-page__link" href="/">
-    <img src="/icon/logo.svg" alt="COATCHTECHロゴ">
-  </a>
-</div>
-@endsection
-
 @section('content')
 <div class="content">
   <h1 class="ttl">ログイン</h1>
