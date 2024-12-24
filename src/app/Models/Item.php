@@ -13,6 +13,10 @@ class Item extends Model
         'id',
     ];
 
+    public function brand()
+    {
+        return $this->belongsTo(Status::class);
+    }
     public function category()
     {
         return $this->belongsTo(Category::class);

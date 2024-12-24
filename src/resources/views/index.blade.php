@@ -5,12 +5,6 @@
 @endsection
 
 @section('header')
-<div class="header">
-  <div class="header__logo">
-    <a class="top-page__link" href="/">
-      <img src="/icon/logo.svg" alt="COATCHTECHロゴ">
-    </a>
-  </div>
 
   <div class="header__center">
     <p class="header__center-text">なにをお探しですか？</p>
@@ -48,7 +42,6 @@
 
     </nav>
   </div>
-</div>
 @endsection
 
 @section('content')
