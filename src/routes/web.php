@@ -14,6 +14,11 @@ use App\Http\Controllers\ItemController;
 |
 */
 
-Route::get('/sell', [ItemController::class, 'sell'])->name('sell');
+Route::middleware('auth')->group(
+	function () {
+		Route::get('/sell', [ItemController::class, 'sell'])->name('sell');
+		Route::post('/sell', [ItemController::class, 'create']);
+	}
+);
 
 Route::get('/', [ItemController::class, 'index'])->name('index');
