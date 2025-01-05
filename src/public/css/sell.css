@@ -1,37 +1,11 @@
-.content {
-  width: 40%;
-  margin: 30px auto;
-}
-
-.sell-ttl {
-  font-size: 30px;
-  text-align: center;
+li {
+  list-style: none;
 }
 
 label {
   font-size: 18px;
   font-weight: bolder;
   display: block;
-}
-
-.form-img__group {
-  border: dotted 1px #5F5F5F;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-}
-.form-img__button {
-  margin: 0 auto;
-  color: #FF5555;
-  background-color: white;
-  border: solid 2px #FF5555;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 8px 20px;
-}
-.form-img__input[type="file"] {
-  display: none;
 }
 
 h2 {
@@ -45,6 +19,43 @@ input {
   height: 30px;
 }
 
+.content {
+  width: 40%;
+  margin: 30px auto;
+}
+
+.sell-ttl {
+  font-size: 30px;
+  text-align: center;
+}
+
+.sell-message {
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.form-img__group {
+  border: dotted 1px #5F5F5F;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.form-img__upload {
+  margin: 0 auto;
+  color: #FF5555;
+  background-color: white;
+  border: solid 2px #FF5555;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+.form-img__input[type="file"] {
+  display: none;
+}
+
 .form-detail, .form-describe,
 .form-price {
   margin-top: 50px;
@@ -55,9 +66,37 @@ input {
   margin-top: 20px;
 }
 
+.form-detail__brand,
+.form-detail__category,
+.form-detail__status {
+  width: 100%;
+  height: 30px;
+}
+
 .form-describe__content {
   width: 100%;
   height: 100px;
+}
+
+.form-price__input {
+  padding-left: 30px;
+}
+.form-price__input[type="number"]::-webkit-inner-spin-button,
+.form-price__input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.form-price__group {
+  position: relative;
+}
+.form-price__group::before {
+  content: "￥";
+  position: absolute;
+  top: 55%;
+  left: 10px;
+  font-weight: bolder;
 }
 
 .form-sell__button {

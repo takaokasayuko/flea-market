@@ -41,3 +41,44 @@
   text-decoration: none;
   color: black;
 }
+
+/* 商品一覧 */
+.item__link {
+  margin-top: 30px;
+  border-bottom: solid 1px #5F5F5F;
+  padding-left: 80px;
+}
+
+.link {
+  text-decoration: none;
+  color: #5F5F5F;
+  font-weight: bolder;
+}
+.active {
+  color: red;
+}
+.favorite-item__link {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.all-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.item__image {
+  width: 15%;
+  height: 220px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
