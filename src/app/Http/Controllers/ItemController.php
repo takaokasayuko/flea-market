@@ -14,8 +14,16 @@ class ItemController extends Controller
 {
     public function index()
     {
+        $items = Item::all();
 
-        return view('index');
+        return view('index', compact('items'));
+    }
+
+    public function favorite()
+    {
+        $items = Item::all();
+
+        return view('index', compact('items'));
     }
 
     public function sell()
