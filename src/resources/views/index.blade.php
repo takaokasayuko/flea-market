@@ -54,10 +54,15 @@
     @foreach($items as $item)
     <div class="item__image">
       <a class="item-detail__link" href="">
+        @if(str_starts_with($item['image'], '../image/'))
+        <img class="image" src="{{ $item['image'] }}" alt="商品画像">
+        @else
         <img class="image" src="{{ Storage::url($item['image']) }}" alt="商品画像">
+        @endif
       </a>
     </div>
     @endforeach
   </div>
+
 </div>
 @endsection
