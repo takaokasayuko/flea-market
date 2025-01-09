@@ -43,7 +43,7 @@ class SellRequest extends FormRequest
             'detail.required' => '商品の説明を入力してください',
             'price.required' => '金額を入力してください',
             'price.integer' => '数字で入力してください',
-            'price.max:1000000' => '100万円未満で入力してください',
+            'price.max:1000000' => '金額には100万円未満で入力してください',
         ];
     }
 }

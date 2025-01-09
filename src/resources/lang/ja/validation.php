@@ -76,7 +76,7 @@ return [
         'array'   => ':attributeの項目数は、:value個以下でなければなりません。',
     ],
     'max'                  => [
-        'numeric' => ':attributeには、:max以下の数字を指定してください。',
+        'numeric' => ':attributeには100万円未満で入力してください。',
         'file'    => ':attributeには、:max KB以下のファイルを指定してください。',
         'string'  => ':attributeは、:max文字以下にしてください。',
         'array'   => ':attributeの項目は、:max個以下にしてください。',
@@ -149,7 +149,8 @@ return [
 
     'attributes' => [
         'email' => 'メールアドレス',
-        'password' => 'パスワード'
+        'password' => 'パスワード',
+        'price' => '金額'
 
     ],
 ];
